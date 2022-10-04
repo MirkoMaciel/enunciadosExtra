@@ -1,17 +1,19 @@
 package enunciadoGit;
 
+import java.util.ArrayList;
 
-
-public class Temporada extends Episodio {
+public class Temporada  {
 
 	private Integer numero;
 	private Integer cantidadEpisodio; //cantidad
+	private ArrayList<Episodio> episodios;
 	
-	public Temporada(String titulo, Integer duracion, Integer calificacion, String fechaEmision, Integer numero, Integer cantidadEpisodio) {
-		super(titulo, duracion, calificacion, fechaEmision);
-		// TODO Auto-generated constructor stub
-		this.numero=numero;
-		this.cantidadEpisodio=cantidadEpisodio;
+
+	public Temporada(Integer numero, Integer cantidadEpisodio, ArrayList<Episodio> episodios) {
+		super();
+		this.numero = numero;
+		this.cantidadEpisodio = cantidadEpisodio;
+		this.episodios = episodios;
 	}
 
 	public Integer getNumero() {
@@ -30,9 +32,30 @@ public class Temporada extends Episodio {
 		this.cantidadEpisodio = cantidadEpisodio;
 	}
 
+	
+	public ArrayList<Episodio> getEpisodios() {
+		return episodios;
+	}
+
+	public void setEpisodios(ArrayList<Episodio> episodios) {
+		this.episodios = episodios;
+	}
+
+	public void addEpisodio (ArrayList<Episodio> eps) {
+		this.addEpisodio(eps);
+	}
+	
+	
+	public void imprimirEpisodios() {
+		for (int i = 0 ; i < episodios.size() ; i++) {
+			System.out.println(episodios.get(i).toString());
+		}
+	}
+	
 	@Override
 	public String toString() {
-		return "Temporada [numero=" + numero + ", cantidadEpisodio=" + cantidadEpisodio + "]";
+		return "\nTemporada: " + numero + " (Cantidad de Episodio:" + cantidadEpisodio + ")"+
+				"\nEpisodios: "/*episodios.toString()*/;
 	}
 	
 	

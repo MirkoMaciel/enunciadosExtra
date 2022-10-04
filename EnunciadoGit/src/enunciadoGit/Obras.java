@@ -6,6 +6,12 @@ public  class Obras { //Peliculas y episodios
 	private Integer duracion;
 	private Integer calificacion; //0 a 10 , 10 la mejor
 	
+	
+	public Obras(String titulo) {
+		super();
+		this.titulo=titulo;
+	}
+	
 	public Obras(String titulo, Integer duracion, Integer calificacion) {
 		super();
 		this.titulo = titulo;

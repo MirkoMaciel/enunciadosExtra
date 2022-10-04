@@ -30,7 +30,11 @@ public class Episodio extends Obras {
 
 	@Override
 	public String toString() {
-		return super.toString() + ", Fecha emision: " + fechaEmision;
+		return "\nTitulo episodio: "+super.getTitulo() +", Duracion: "+ super.getDuracion() +", Calificacion episodio: "+super.getCalificacion()+ ", Fecha emision: " + fechaEmision;
 	}
+	
+//	public String toString () {
+//		return
+//	}
 
 }
