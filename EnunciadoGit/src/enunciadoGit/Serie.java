@@ -39,7 +39,7 @@ public class Serie extends Obras{
 	
 	@Override
 	public String toString() {
-		return "Serie: "+ super.getTitulo() + ", Temporadas: " + cantidadTemporadas +"\n" /*tmp.toString()*/;
+		return "\nSerie: "+ super.getTitulo() + ", Temporadas: " + cantidadTemporadas +"\n" /*tmp.toString()*/;
 	}
 
 	

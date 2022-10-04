@@ -30,7 +30,7 @@ public class Pelicula extends Obras{
 
 	@Override
 	public String toString() {
-		return super.toString()+", Recaudacion (En miles de pesos): "+ recaudacion + ", Pais:" + pais;
+		return "Pelicula: "+super.toString()+", Recaudacion (En miles de pesos): "+ recaudacion + ", Pais:" + pais;
 	}
 
 

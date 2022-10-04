@@ -46,7 +46,7 @@ public  class Obras { //Peliculas y episodios
 
 	@Override
 	public String toString() {
-		return "Obras: \nTitulo: " + titulo + ", Duracion(en minutos): " + duracion + ", Calificacion: " + calificacion;
+		return titulo + ", Duracion(en minutos): " + duracion + ", Calificacion: " + calificacion;
 	}
 	
 	
